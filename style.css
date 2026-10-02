@@ -1,0 +1,100 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Hero Section Layout */
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    position: relative;
+    text-align: center;
+}
+
+/* Single Line Responsive Headline */
+.headline {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+/* Statistics Cards Container */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    flex: 1;
+}
+
+.stat-card h2 {
+    font-size: 1.2rem;
+    color: #ff3366;
+}
+
+.stat-card p {
+    font-size: 0.7rem;
+    color: #b0b0b0;
+    margin-top: 4px;
+}
+
+/* Main Visual Element Container */
+.car-wrapper {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Scroll Space for Testing */
+.scroll-space {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0b0b0b 0%, #1a1a2e 100%);
+}
+
+.scroll-space h2 {
+    font-size: 1.2rem;
+    color: #777777;
+}
